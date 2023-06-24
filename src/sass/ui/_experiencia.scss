@@ -9,6 +9,8 @@
     &___grid{
         @include m.tablet{
             @include m.grid(2, 2rem, 2rem); 
+            width: min(120rem, 95%);
+            margin: 0 auto;
         }
         @include m.desktop{
             width: 90%;
