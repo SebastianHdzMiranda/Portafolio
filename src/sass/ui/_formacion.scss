@@ -1,0 +1,57 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+/* formacion
+----------------------------------------------------------*/
+.formacion{
+    background-color: v.$azul;
+    &__heading{
+        text-align: center;
+    }
+    &__contenido{
+        @include m.telefono{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__elemento{
+        margin-bottom: 2rem;
+            &:last-of-type{
+                margin: 0;
+            }
+        @include m.telefono{
+            margin-bottom: 0;
+            width: 35rem;
+            margin-right: 3rem;
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+    }
+    &__imagenContainer{
+        background-color: v.$blanco;
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+
+        @include m.tablet{
+            padding: 5rem;
+        }
+    }
+    &__imagen{
+        height: 10rem;
+        width: 10rem;
+        object-fit: contain;
+        @include m.tablet{
+            height: 12rem;
+            width: 12rem;
+        }
+    }
+    &__titulo{
+        font-size: 2rem;
+        margin: 1.5rem 0 0 0;
+    }
+    &__texto{
+        margin: 0;
+    }
+
+}

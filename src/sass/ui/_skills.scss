@@ -1,0 +1,23 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+/* Skills
+----------------------------------------------------------*/
+.skills{
+    &__heading{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    &__grid{
+        @include m.gridTemplete;
+    }
+    &__skill{
+        @include m.box;
+    }
+    &__contenido{
+        @include m.boxContent;
+    }
+    &__nombre{
+        margin: .5rem 0 0 0;
+    }
+
+}

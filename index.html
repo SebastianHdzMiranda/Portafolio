@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="build/css/normalize.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img class="header__imagen" src="build/assets/star.svg" alt="logo star">
+            <p class="header__nombre">Sebastian Hernandez</p>
+        </div>
+        <nav class="header__nav">
+            <a href="#" class="header__link">Sobre mi</a>
+            <a href="#" class="header__link">Skills</a>
+            <a href="#" class="header__link">Hobbies</a>
+            <a href="#" class="header__link">Formación</a>
+            <a href="#" class="header__link">Proyectos</a>
+            <a href="#" class="header__link">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="perfil contenedor seccion">
+        <div class="perfil__info">
+            <h1 class="perfil__intro">
+                Sebastian Hernandez, Desarrollador Front-End
+            </h1>
+            <p class="perfil__descripcion">
+                Estudiante de Computación enfocado en el área de Desarrollo Web Front-End, busco una oportunidad para poner en práctica mis conocimientos y habilidades adquiridas en la universidad y de forma autodidacta. 
+            </p>
+            <nav class="perfil__nav">
+                
+                <a href="#" class="perfil__link">
+                    <p class="perfil__nombre">Github</p>
+                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                </a>
+
+                <a href="#" class="perfil__link">
+                    <p class="perfil__nombre">LinkedIn</p>
+                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                </a>
+
+                <a href="#" class="perfil__link">
+                    <p class="perfil__nombre">Instagram</p>
+                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                </a>
+
+                <a href="#" class="perfil__link">
+                    <p class="perfil__nombre">Curriculum</p>
+                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                </a>
+            </nav>
+        </div>
+        <div class="perfil__fotoContainer">
+            <picture>
+                <source srcset="build/assets/foto.avif" type="image/avif">
+                <source srcset="build/assets/foto.webp" type="image/webp">
+                <source srcset="build/assets/foto.png" type="image/png">
+                <img class="perfil__foto" loading="lazy" src="build/assets/foto.png" width="500" height="300" alt="foto">
+            </picture>
+        </div>
+    </section>
+
+    <section class="sobreMi seccion">
+        <div class="sobreMi_contenido contenedor">
+            <h2 class="sobreMi__heading">Sobre mi</h2>
+            <div class="sobreMi__descripcion">
+                <p class="sobreMi__texto">Soy Sebastian, una persona apasionada por el Desarrollo Web con experiencia en la creación de interfaces web atractivas y funcionales. Mi pasión por la tecnología me impulsa a estar siempre actualizado sobre las últimas tendencias y mejores prácticas en el desarrollo web. Mi objetivo es seguir creciendo profesionalmente y expandir mis habilidades en el ámbito del desarrollo web. Estoy emocionado de formar parte de proyectos emocionantes y contribuir al éxito de los productos digitales con mi experiencia y pasión por la tecnología.</p>
+                <p class="sobreMi__texto">A parte del desarrollo, me encanta sumergirme en el mundo de la música. Es mi pasión y una fuente constante de inspiración.</p>
+            </div>
+            <img src="build/assets/firma.svg" alt="" class="sobreMi__firma">
+        </div>
+    </section>
+
+    <section class="skills contenedor seccion">
+        <h2 class="skills__heading">Skills</h2>
+        <div class="skills__grid">
+            <div class="skills__skill">
+                <div class="skills__contenido">
+                    <img src="build/assets/html.svg" alt="" class="skills__imagen">
+                    <p class="skills__nombre">Html 5</p>
+                </div>
+            </div>
+            <div class="skills__skill">
+                <div class="skills__contenido">
+                    <img src="build/assets/js.svg" alt="" class="skills__imagen">
+                    <p class="skills__nombre">JavaScript</p>
+                </div>
+
+            </div>
+            <div class="skills__skill">
+                <div class="skills__contenido">
+                    <img src="build/assets/php.svg" alt="" class="skills__imagen">
+                    <p class="skills__nombre">PHP</p>
+                </div>
+            </div>
+            <div class="skills__skill">
+                <div class="skills__contenido">
+                    <img src="build/assets/node.svg" alt="" class="skills__imagen">
+                    <p class="skills__nombre">Node JS</p>
+                </div>
+            </div>
+            <div class="skills__skill">
+                <div class="skills__contenido">
+                    <img src="build/assets/react.svg" alt="" class="skills__imagen">
+                    <p class="skills__nombre">React</p>
+                </div>
+            </div>
+            <div class="skills__skill">
+                <div class="skills__contenido">
+                    <img src="build/assets/css.svg" alt="" class="skills__imagen">
+                    <p class="skills__nombre">CSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hobbies contenedor seccion">
+        <h2 class="hobbies__heading">hobbies</h2>
+        <div class="hobbies__grid">
+            <div class="hobbies__skill">
+                <div class="hobbies__contenido">
+                    <img src="build/assets/patinaje.svg" alt="patinaje" class="hobbies__imagen">
+                    <p class="hobbies__nombre">Patinaje</p>
+                </div>
+            </div>
+            <div class="hobbies__skill">
+                <div class="hobbies__contenido">
+                    <img src="build/assets/guitar.svg" alt="guitarra" class="hobbies__imagen">
+                    <p class="hobbies__nombre">Guitarra</p>
+                </div>
+
+            </div>
+            <div class="hobbies__skill">
+                <div class="hobbies__contenido">
+                    <img src="build/assets/headphones.svg" alt="audifonos" class="hobbies__imagen">
+                    <p class="hobbies__nombre">Musica</p>
+                </div>
+            </div>
+            <div class="hobbies__skill">
+                <div class="hobbies__contenido">
+                    <img src="build/assets/tv.svg" alt="Tv" class="hobbies__imagen">
+                    <p class="hobbies__nombre">Ver Series</p>
+                </div>
+            </div>
+            <div class="hobbies__skill">
+                <div class="hobbies__contenido">
+                    <img src="build/assets/cocina.svg" alt="Cocina" class="hobbies__imagen">
+                    <p class="hobbies__nombre">Cocinar</p>
+                </div>
+            </div>
+            <div class="hobbies__skill">
+                <div class="hobbies__contenido">
+                    <img src="build/assets/camera.svg" alt="fotografia" class="hobbies__imagen">
+                    <p class="hobbies__nombre">Fotografia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formacion seccion">
+        <h2 class="formacion__heading">Formación académica</h2>
+        <div class="formacion__contenido contenedor">
+            <div class="formacion__elemento">
+                <div class="formacion__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/ipn.avif" type="image/avif">
+                        <source srcset="build/assets/ipn.webp" type="image/webp">
+                        <source srcset="build/assets/ipn.jpg" type="image/png">
+                        <img class="formacion__imagen" loading="lazy" src="build/assets/ipn.png" width="500" height="300" alt="ipn">
+                    </picture>
+                </div>
+
+                <div class="formacion__info">
+                    <h3 class="formacion__titulo">Universidad ipn</h3>
+                    <p class="formacion__texto">2021 - En curso</p>
+                </div>
+            </div>
+            <div class="formacion__elemento">
+                <div class="formacion__imagenContainer">
+                    <img class="formacion__imagen" src="build/assets/logo.svg" alt="alura">
+                </div>
+
+                <div class="formacion__info">
+                    <h3 class="formacion__titulo">Formacion Oracle ONE</h3>
+                    <p class="formacion__texto">2021 - En curso</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="experiencia seccion">
+        <h2 class="experiencia__heading">Portafolio</h2>
+
+        <div class="experiencia___grid">
+            
+            <div class="experiencia__elemento">
+                <div class="experiencia__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/encriptador.avif" type="image/avif">
+                        <source srcset="build/assets/encriptador.webp" type="image/webp">
+                        <source srcset="build/assets/encriptador.png" type="image/jpg">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/encriptador.png" width="500" height="300" alt="">
+                    </picture>
+                </div>
+
+                <div class="experiencia__info">
+                    <h3 class="experiencia__titulo">Encriptador de texto</h3>
+                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+
+                    <div class="experiencia__btns">
+                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
+                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experiencia__elemento">
+                <div class="experiencia__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/cafeteria.avif" type="image/avif">
+                        <source srcset="build/assets/cafeteria.webp" type="image/webp">
+                        <source srcset="build/assets/cafeteria.jpg" type="image/jpg">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/cafeteria.jpg" width="500" height="300" alt="">
+                    </picture>
+                </div>
+
+                <div class="experiencia__info">
+                    <h3 class="experiencia__titulo">La Cafetería</h3>
+                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+
+                    <div class="experiencia__btns">
+                        <a class="experiencia__btn" href="#">Repositorio</a>
+                        <a class="experiencia__btn" href="#">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experiencia__elemento">
+                <div class="experiencia__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/podcast.avif" type="image/avif">
+                        <source srcset="build/assets/podcast.webp" type="image/webp">
+                        <source srcset="build/assets/podcast.jpg" type="image/jpg">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/podcast.jpg" width="500" height="300" alt="">
+                    </picture>
+                </div>
+
+                <div class="experiencia__info">
+                    <h3 class="experiencia__titulo">Poscast FM</h3>
+                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+
+                    <div class="experiencia__btns">
+                        <a class="experiencia__btn" href="#">Repositorio</a>
+                        <a class="experiencia__btn" href="#">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experiencia__elemento">
+                <div class="experiencia__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/header.avif" type="image/avif">
+                        <source srcset="build/assets/header.webp" type="image/webp">
+                        <source srcset="build/assets/header.jpg" type="image/jpg">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/header.jpg" width="500" height="300" alt="">
+                    </picture>
+                </div>
+
+                <div class="experiencia__info">
+                    <h3 class="experiencia__titulo">Tech PRO</h3>
+                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+
+                    <div class="experiencia__btns">
+                        <a class="experiencia__btn" href="#">Repositorio</a>
+                        <a class="experiencia__btn" href="#">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experiencia__elemento">
+                <div class="experiencia__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/appComida.avif" type="image/avif">
+                        <source srcset="build/assets/appComida.webp" type="image/webp">
+                        <source srcset="build/assets/appComida.png" type="image/jpg">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/appComida.png" width="500" height="300" alt="">
+                    </picture>
+                </div>
+
+                <div class="experiencia__info">
+                    <h3 class="experiencia__titulo">App Comida</h3>
+                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+
+                    <div class="experiencia__btns">
+                        <a class="experiencia__btn" href="#">Repositorio</a>
+                        <a class="experiencia__btn" href="#">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experiencia__elemento">
+                <div class="experiencia__imagenContainer">
+                    <picture>
+                        <source srcset="build/assets/airbnb.avif" type="image/avif">
+                        <source srcset="build/assets/airbnb.webp" type="image/webp">
+                        <source srcset="build/assets/airbnb.png" type="image/jpg">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/airbnb.png" width="500" height="300" alt="">
+                    </picture>
+                </div>
+
+                <div class="experiencia__info">
+                    <h3 class="experiencia__titulo">Encriptador de texto</h3>
+                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+
+                    <div class="experiencia__btns">
+                        <a class="experiencia__btn" href="#">Repositorio</a>
+                        <a class="experiencia__btn" href="#">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>

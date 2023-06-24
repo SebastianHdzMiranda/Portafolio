@@ -1,0 +1,27 @@
+@use 'variables' as v; 
+@use 'mixins' as m;
+/* Tipografia
+----------------------------------------------------------*/
+h1, h2, h3 {
+    font-family: v.$fuentePrincipal;
+    margin: 0 0 2rem 0;
+    // text-transform: uppercase;
+    line-height: 1.2;
+    // text-align: center;
+    color: v.$primario;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+}
+p {
+    color: v.$primario;
+    font-size: 1.6rem;
+    line-height: 2;
+
+}

@@ -1,0 +1,30 @@
+@use 'variables' as v;
+/* Globales
+----------------------------------------------------------*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuenteSecundaria;
+    font-size: 1.6rem;
+    background-color: v.$bg;
+}
+a{
+    text-decoration: none;
+    color: v.$primario;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    width: auto;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

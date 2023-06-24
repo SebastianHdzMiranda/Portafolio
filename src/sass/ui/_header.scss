@@ -1,0 +1,39 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    &__nombre{
+        font-weight: 700;
+        color: #464646;
+    }
+    &__nav{
+        display: flex;
+        gap: 2rem;
+
+        @include m.desktop{
+            gap: 4rem;
+        }
+    }
+    &__link{
+        display: none;
+        &:last-of-type{
+            display: block;
+            margin-left: 1rem;
+        }
+        @include m.tablet{
+            display: block;
+            &:last-of-type{
+                font-weight: 700;
+            }
+        }
+    }
+
+}

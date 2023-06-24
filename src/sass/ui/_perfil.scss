@@ -1,0 +1,82 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+/* perfil
+----------------------------------------------------------*/
+.perfil{
+    display: flex;
+    flex-direction: column;
+    @include m.tablet{
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+
+    }
+    @include m.desktop{
+        gap: 2rem;
+    }
+    &__info{
+        @include m.tablet{
+            flex: 2;
+        }
+        @include m.desktop{
+            flex: 4;
+        }
+    }
+    &__intro{
+        font-size: 2.7rem;
+        text-align: left;
+        @include m.tablet{
+            font-size: 3.7rem;
+        }
+        @include m.desktop{
+            font-size: 4rem;
+        }
+    }
+    &__nav{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        @include m.telefono{
+            justify-content: unset;
+            gap: 3rem;
+        }
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        @include m.tablet {
+            gap: .5rem;
+        }
+    }
+    &__nombre{
+        font-size: 4vw;
+        @include m.telefono{
+            font-size: 1.6rem;
+        }
+    }
+    &__arrow{
+        width: 4vw;
+        height: 4vw;
+        @include m.telefono{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    &__fotoContainer{
+        flex: 1;
+        order: -1;
+        margin: 0 auto 3rem auto;
+        max-width: 20rem;
+        @include m.tablet{
+            order: 0;
+            margin: unset;
+            max-width: unset;
+        }
+    }
+    &__foto{
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+}
