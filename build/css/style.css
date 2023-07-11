@@ -115,9 +115,9 @@ p {
   align-items: center;
 }
 .header__nombre {
-  font-weight: 700;
   font-size: 2.5rem;
   line-height: unset;
+  z-index: 1;
 }
 .header__nav {
   display: flex;
@@ -152,6 +152,8 @@ p {
   height: 0;
   overflow: hidden;
   transition: all 0.15s ease-in;
+  justify-content: center;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .menu__nav {
@@ -165,10 +167,10 @@ p {
 }
 .menu__link {
   padding: 2.2rem 0;
-  margin-left: 3rem;
 }
 @media (min-width: 768px) {
   .menu__link {
+    margin-left: 3rem;
     margin-right: 0.5rem;
     padding: 0;
   }
