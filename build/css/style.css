@@ -187,7 +187,7 @@ p {
 .menu .menu__nav--visible {
   height: 37rem;
   padding-top: 4rem;
-  border-bottom: 2px solid #FFFFFF;
+  box-shadow: 0px -8px 21px 0px rgb(255, 255, 255);
 }
 @media (min-width: 768px) {
   .menu .menu__nav--visible {
