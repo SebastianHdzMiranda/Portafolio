@@ -6,6 +6,7 @@
     background-color: v.$negro;
     .sobreMi__contenido{
         padding: 5rem 0;
+        border-bottom: 1px solid #ffffff;
     }
     .sobreMi__heading{
         font-weight: 300;
@@ -15,6 +16,7 @@
         margin-bottom: 3rem;
     }
     .sobreMi__secciones{
+        position: relative;
 
     }
     .sobreMi__seccion{
@@ -31,12 +33,22 @@
         color: #ffffff;
         border: 2px solid #ffffff52;
         display: block;
+
+        @include m.tablet{
+            width: 20%;
+            border: none;
+            border-left: 2px solid #ffffff52;
+        }
     }
     .sobreMi__input:checked + label{
         background-color: #1f1e1e;
         color: #ffffff;
         border: 2px solid #ffffff;
         display: block;
+        @include m.tablet{
+            border: none;
+            border-left: 2px solid v.$blanco
+        }
     }
     .sobreMi__input:checked ~ .sobreMi__info{
         display: block;
@@ -44,6 +56,10 @@
         opacity: 1;
         transition: opacity .4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
         padding: 3rem 0;
+
+        @include m.tablet{
+            padding: 0;
+        }
     }
     .sobreMi__label{
 
@@ -60,11 +76,25 @@
         &:hover{
             transform: translateX(5px);
         }
+        @include m.tablet{
+            padding-left: 1.5rem;
+            font-size: 1.8rem;
+        }
+        @include m.desktop{
+            font-size: 2rem;
+        }
     }
     .sobreMi__info{
         opacity: 0;
         height: 0;
         overflow: hidden;
+
+        @include m.tablet{
+            position: absolute;
+            top: 0;
+            left: 25%;
+            width: 80%;
+        }
     }
     .sobreMi__title{
         margin: 0;
@@ -79,8 +109,9 @@
 
     }
     .sobreMi__item{
-        line-height: 1.5;
+        line-height: 1.8;
         color: v.$whiteB;
+        font-weight: 300;
         list-style-position: inside;
     }
 

@@ -28,13 +28,10 @@
     @include tablet{
         @include grid(3, 2rem, 2rem);
     }
-    @include desktop{
-        @include grid(6, 2rem, 2rem);
-    }
 }
 @mixin box {
     padding: 1.5rem;
-    height: 18rem;
+    height: auto;
     position: relative;
 }
 @mixin boxContent {

@@ -3,21 +3,23 @@
 /* Skills
 ----------------------------------------------------------*/
 .skills{
+    padding-top: 2rem; 
+    @include m.gridTemplete;
     &__heading{
         text-align: center;
         padding-bottom: 2rem;
-    }
-    &__grid{
-        @include m.gridTemplete;
     }
     &__skill{
         @include m.box;
     }
     &__contenido{
-        @include m.boxContent;
+        width: 100%;
+        text-align: center;
     }
     &__nombre{
         margin: .5rem 0 0 0;
     }
-
+    &__imagen{
+        margin: 0 auto;
+    }
 }
