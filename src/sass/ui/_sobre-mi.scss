@@ -3,5 +3,87 @@
 /* sobre mi
 ----------------------------------------------------------*/
 .sobreMi{
-    background-color: #EAF2FD;
+    background-color: v.$negro;
+    .sobreMi__contenido{
+        padding: 5rem 0;
+    }
+    .sobreMi__heading{
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .sobreMi__secciones{
+
+    }
+    .sobreMi__seccion{
+
+    }
+    .sobreMi__input{ //oculta la viñeta de circle
+        left: -9999px;
+        position:absolute;     
+    }
+    .sobreMi__input + label{
+
+    }
+    .sobreMi__input + label{
+        color: #ffffff;
+        border: 2px solid #ffffff52;
+        display: block;
+    }
+    .sobreMi__input:checked + label{
+        background-color: #1f1e1e;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        display: block;
+    }
+    .sobreMi__input:checked ~ .sobreMi__info{
+        display: block;
+        height: auto;
+        opacity: 1;
+        transition: opacity .4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        padding: 3rem 0;
+    }
+    .sobreMi__label{
+
+    }
+    .sobreMi__nombre{
+        cursor: pointer; 
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0;
+        transition: transform .3s ease;
+        height: 100%;
+        padding: 1.2rem 0 1.2rem 1rem;
+        &:hover{
+            transform: translateX(5px);
+        }
+    }
+    .sobreMi__info{
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .sobreMi__title{
+        margin: 0;
+    }
+    .sobreMi__sitio{
+        color: #6cace4;
+        opacity: .8;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+    .sobreMi__list{
+
+    }
+    .sobreMi__item{
+        line-height: 1.5;
+        color: v.$whiteB;
+        list-style-position: inside;
+    }
+
+
+
 }

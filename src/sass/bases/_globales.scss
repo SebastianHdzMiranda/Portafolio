@@ -9,13 +9,16 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-family: v.$fuenteSecundaria;
+    font-family: v.$font-primary;
     font-size: 1.6rem;
-    background-color: v.$bg;
+    background-color: v.$primario;
 }
 a{
     text-decoration: none;
-    color: v.$primario;
+    color: v.$whiteB;
+    font-family: v.$font-secondary;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 img {
     max-width: 100%;
@@ -24,7 +27,10 @@ img {
     width: auto;
 }
 ul{
-    list-style: none;
+    // list-style: none;
     padding: 0;
     margin: 0;
+}
+li{
+    color: v.$blanco;
 }

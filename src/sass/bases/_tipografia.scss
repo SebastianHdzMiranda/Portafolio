@@ -3,12 +3,10 @@
 /* Tipografia
 ----------------------------------------------------------*/
 h1, h2, h3 {
-    font-family: v.$fuentePrincipal;
+    font-family: v.$font-primary;
     margin: 0 0 2rem 0;
-    // text-transform: uppercase;
     line-height: 1.2;
-    // text-align: center;
-    color: v.$primario;
+    color: v.$blanco;
 }
 h1{
     font-size: 4rem;
@@ -20,8 +18,10 @@ h3{
     font-size: 2rem;
 }
 p {
-    color: v.$primario;
+    color: v.$whiteB;
     font-size: 1.6rem;
     line-height: 2;
-
+    font-family: v.$font-primary;
+    font-weight: 500;
+    letter-spacing: 1px;
 }

@@ -6,7 +6,26 @@
     width: 90%;
     max-width: 120rem;
     margin: 0 auto;
+    @include m.desktop{
+        width: 70%;
+    }
 }
 .seccion{
-    padding: v.$separacion 0;
+    padding: 5rem 0;
+    @include m.tablet{
+        padding: v.$separacion 0;
+    }
+}
+.degradado-verde{
+    color: transparent;/* necesario  definir un color transparente al texto*/
+
+    
+    // background: linear-gradient(to right, #00DA55 0%, #1073BA 100%);
+    background: linear-gradient(to right, #2ceded 0%, #1073BA 100%);
+    -webkit-background-clip: text;/* prefijo necesario en la mayoria de navegadores */
+
+    background-clip: text; /*permite aplicar el degradado en el texto */
+}
+.bg-n1{
+    background-color: #111111;
 }

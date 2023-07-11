@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // position: relative;
+    width: min(128rem, 90%);
+    margin: 0 auto;
     &__logo{
         display: flex;
         gap: 1rem;
@@ -12,7 +15,8 @@
     }
     &__nombre{
         font-weight: 700;
-        color: #464646;
+        font-size: 2.5rem;
+        line-height: unset;
     }
     &__nav{
         display: flex;
@@ -22,17 +26,64 @@
             gap: 4rem;
         }
     }
-    &__link{
-        display: none;
-        &:last-of-type{
-            display: block;
-            margin-left: 1rem;
-        }
+}
+.menu{
+    &__enlace{
+        z-index: 1;
+        position: relative;
         @include m.tablet{
-            display: block;
+            display: none;
+        }
+    }
+    &__icon{
+        width: 2.5rem;
+    }    
+    &__nav{
+        position: absolute;
+        top: 0;
+        right: 0;        
+        background-color: v.$negro;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: all .15s ease-in;
+        @include m.tablet{
+            position: unset;
+            background-color: unset;            
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            transition: unset;
+        }
+    }
+
+    &__link{
+        padding: 2.2rem 0;
+        margin-left: 3rem;
+        @include m.tablet{
+            margin-right: .5rem;
+            padding: 0;
             &:last-of-type{
                 font-weight: 700;
+                margin-right: 0;
             }
+        }
+        @include m.desktop{
+            margin-right: 2.5rem;
+        }
+    }
+
+    .menu__nav--visible{
+        // height: 370px;
+        height: 37rem;
+        padding-top: 4rem;
+        border-bottom: 2px solid v.$blanco;
+        @include m.tablet{
+            height: auto;
+            padding-top: 0;
+            border-bottom: unset;
         }
     }
 

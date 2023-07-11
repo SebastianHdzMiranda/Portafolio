@@ -10,30 +10,38 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="build/css/style.css">
 </head>
 <body>
-    <header class="header contenedor">
+    <header class="header">
         <div class="header__logo">
-            <img class="header__imagen" src="build/assets/star.svg" alt="logo star">
-            <p class="header__nombre">Sebastian Hernandez</p>
+            <p class="header__nombre">
+                SH
+            </p>
         </div>
-        <nav class="header__nav">
-            <a href="#" class="header__link">Sobre mi</a>
-            <a href="#" class="header__link">Skills</a>
-            <a href="#" class="header__link">Hobbies</a>
-            <a href="#" class="header__link">Formación</a>
-            <a href="#" class="header__link">Proyectos</a>
-            <a href="#" class="header__link">Contacto</a>
-        </nav>
+
+        <div class="menu">
+            <a class="menu__enlace" href="#">
+                <img class="menu__icon" src="build/assets/menu.svg" alt="menu">
+            </a>
+
+
+            <nav class="menu__nav">
+                <a href="#" class="menu__link">Sobre mi</a>
+                <a href="#" class="menu__link">Skills</a>
+                <a href="#" class="menu__link">Formación</a>
+                <a href="#" class="menu__link">Proyectos</a>
+                <a href="#" class="menu__link">Contacto</a>
+            </nav>
+        </div>
     </header>
 
     <section class="perfil contenedor seccion">
         <div class="perfil__info">
-            <h1 class="perfil__intro">
-                Sebastian Hernandez, Desarrollador Front-End
+            <h1 class="perfil__intro degradado-verde">
+                Hey, I'm Sebastian Hernandez
             </h1>
             <p class="perfil__descripcion">
                 Estudiante de Computación enfocado en el área de Desarrollo Web Front-End, busco una oportunidad para poner en práctica mis conocimientos y habilidades adquiridas en la universidad y de forma autodidacta. 
@@ -42,22 +50,18 @@
                 
                 <a href="#" class="perfil__link">
                     <p class="perfil__nombre">Github</p>
-                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                    <!-- <img class="perfil__arrow" src="build/assets/arrow.svg" alt=""> -->
+                    <img class="perfil__arrow" src="build/assets/github.svg" alt="">
                 </a>
 
                 <a href="#" class="perfil__link">
                     <p class="perfil__nombre">LinkedIn</p>
-                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
-                </a>
-
-                <a href="#" class="perfil__link">
-                    <p class="perfil__nombre">Instagram</p>
-                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                    <img class="perfil__arrow" src="build/assets/linkedin.svg" alt="">
                 </a>
 
                 <a href="#" class="perfil__link">
                     <p class="perfil__nombre">Curriculum</p>
-                    <img class="perfil__arrow" src="build/assets/arrow.svg" alt="">
+                    <img class="perfil__arrow" src="build/assets/cv.svg" alt="">
                 </a>
             </nav>
         </div>
@@ -71,17 +75,86 @@
         </div>
     </section>
 
-    <section class="sobreMi seccion">
-        <div class="sobreMi_contenido contenedor">
+    <section class="sobreMi">
+        <div class="sobreMi__contenido contenedor">
             <h2 class="sobreMi__heading">Sobre mi</h2>
-            <div class="sobreMi__descripcion">
-                <p class="sobreMi__texto">Soy Sebastian, una persona apasionada por el Desarrollo Web con experiencia en la creación de interfaces web atractivas y funcionales. Mi pasión por la tecnología me impulsa a estar siempre actualizado sobre las últimas tendencias y mejores prácticas en el desarrollo web. Mi objetivo es seguir creciendo profesionalmente y expandir mis habilidades en el ámbito del desarrollo web. Estoy emocionado de formar parte de proyectos emocionantes y contribuir al éxito de los productos digitales con mi experiencia y pasión por la tecnología.</p>
-                <p class="sobreMi__texto">A parte del desarrollo, me encanta sumergirme en el mundo de la música. Es mi pasión y una fuente constante de inspiración.</p>
+
+            <div class="sobreMi__secciones">
+                
+                <div class="sobreMi__seccion">
+                    <input class="sobreMi__input" type="radio" name="secciones" id="seccion1" checked>
+                    <label class="sobreMi__label" for="seccion1">
+                        <p class="sobreMi__nombre">Selfbook</p>
+                    </label>
+                
+                    <div class="sobreMi__info">
+                        <h3 class="sobreMi__title">Software Developer Remote</h3>
+                        <p class="sobreMi__sitio">Selfbook / US - New York</p>
+                        <ul class="sobreMi__list">
+                            <li class="sobreMi__item">Developing screens and UI components for the web application using React and
+                                Tailwind.</li>
+                            <li class="sobreMi__item">Fixing UI issues and integrating backend APIs with Redux Saga.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sobreMi__seccion">
+                    <input class="sobreMi__input" type="radio" name="secciones" id="seccion2">
+                    <label class="sobreMi__label" for="seccion2">
+                       <p class="sobreMi__nombre">Skills</p>
+                    </label>
+
+                    <div class="sobreMi__info">
+                        <h3 class="sobreMi__title">Software Developer Remote</h3>
+                        <p class="sobreMi__sitio">Selfbook / US - New York</p>
+                        <ul class="sobreMi__list">
+                            <li class="sobreMi__item">Developing screens and UI components for the web application using React and Tailwind.</li>
+                            <li class="sobreMi__item">Fixing UI issues and integrating backend APIs with Redux Saga.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sobreMi__seccion">
+                    <input class="sobreMi__input" type="radio" name="secciones" id="seccion3">
+                    <label class="sobreMi__label" for="seccion3">
+                       <p class="sobreMi__nombre">Hobbies</p>
+                    </label>
+
+                    <div class="sobreMi__info">
+                        <h3 class="sobreMi__title">Software Developer Remote</h3>
+                        <p class="sobreMi__sitio">Selfbook / US - New York</p>
+                        <ul class="sobreMi__list">
+                            <li class="sobreMi__item">Developing screens and UI components for the web application using React and Tailwind.</li>
+                            <li class="sobreMi__item">Fixing UI issues and integrating backend APIs with Redux Saga.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sobreMi__seccion">
+                    <input class="sobreMi__input" type="radio" name="secciones" id="seccion4">
+                    <label class="sobreMi__label" for="seccion4">
+                       <p class="sobreMi__nombre">Formación</p>
+                    </label>
+
+                    <div class="sobreMi__info">
+                        <h3 class="sobreMi__title">Software Developer Remote</h3>
+                        <p class="sobreMi__sitio">Selfbook / US - New York</p>
+                        <ul class="sobreMi__list">
+                            <li class="sobreMi__item">Developing screens and UI components for the web application using React and Tailwind.</li>
+                            <li class="sobreMi__item">Fixing UI issues and integrating backend APIs with Redux Saga.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <img src="build/assets/firma.svg" alt="" class="sobreMi__firma">
+            
         </div>
     </section>
-
+    
+    <!-- <div class="sobreMi__descripcion">
+        <p class="sobreMi__texto">Soy Sebastian, una persona apasionada por el Desarrollo Web con experiencia en la creación de interfaces web atractivas y funcionales. Mi pasión por la tecnología me impulsa a estar siempre actualizado sobre las últimas tendencias y mejores prácticas en el desarrollo web. Mi objetivo es seguir creciendo profesionalmente y expandir mis habilidades en el ámbito del desarrollo web. Estoy emocionado de formar parte de proyectos emocionantes y contribuir al éxito de los productos digitales con mi experiencia y pasión por la tecnología.</p>
+        <p class="sobreMi__texto">A parte del desarrollo, me encanta sumergirme en el mundo de la música. Es mi pasión y una fuente constante de inspiración.</p>
+    </div>
+    <img src="build/assets/firma.svg" alt="" class="sobreMi__firma"> -->
     <section class="skills contenedor seccion">
         <h2 class="skills__heading">Skills</h2>
         <div class="skills__grid">
@@ -200,18 +273,18 @@
         </div>
     </section>
 
-    <section class="experiencia seccion">
+    <section class="experiencia contenedor seccion">
         <h2 class="experiencia__heading">Portafolio</h2>
 
         <div class="experiencia___grid">
-            
+
             <div class="experiencia__elemento">
                 <div class="experiencia__imagenContainer">
                     <picture>
-                        <source srcset="build/assets/encriptador.avif" type="image/avif">
-                        <source srcset="build/assets/encriptador.webp" type="image/webp">
-                        <source srcset="build/assets/encriptador.png" type="image/jpg">
-                        <img class="experiencia__imagen" loading="lazy" src="build/assets/encriptador.png" width="500" height="300" alt="">
+                        <source srcset="build/assets/codificador.avif" type="image/avif">
+                        <source srcset="build/assets/codificador.webp" type="image/webp">
+                        <source srcset="build/assets/codificador.png" type="image/png">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/codificador.png" width="500" height="300" alt="">
                     </picture>
                 </div>
 
@@ -226,114 +299,77 @@
 
                 </div>
             </div>
+
             <div class="experiencia__elemento">
                 <div class="experiencia__imagenContainer">
                     <picture>
                         <source srcset="build/assets/cafeteria.avif" type="image/avif">
                         <source srcset="build/assets/cafeteria.webp" type="image/webp">
-                        <source srcset="build/assets/cafeteria.jpg" type="image/jpg">
-                        <img class="experiencia__imagen" loading="lazy" src="build/assets/cafeteria.jpg" width="500" height="300" alt="">
+                        <source srcset="build/assets/cafeteria.png" type="image/png">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/cafeteria.png" width="500" height="300" alt="">
                     </picture>
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">La Cafetería</h3>
-                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+                    <h3 class="experiencia__titulo">La Cafeteria</h3>
+                    <p class="experiencia__descripcion">Sitio Web, Venta de Cafe</p>
 
                     <div class="experiencia__btns">
-                        <a class="experiencia__btn" href="#">Repositorio</a>
-                        <a class="experiencia__btn" href="#">Ver demo</a>
+                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
+                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
                     </div>
 
                 </div>
             </div>
+            
             <div class="experiencia__elemento">
                 <div class="experiencia__imagenContainer">
                     <picture>
                         <source srcset="build/assets/podcast.avif" type="image/avif">
                         <source srcset="build/assets/podcast.webp" type="image/webp">
-                        <source srcset="build/assets/podcast.jpg" type="image/jpg">
-                        <img class="experiencia__imagen" loading="lazy" src="build/assets/podcast.jpg" width="500" height="300" alt="">
+                        <source srcset="build/assets/podcast.png" type="image/png">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/podcast.png" width="500" height="300" alt="">
                     </picture>
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">Poscast FM</h3>
-                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+                    <h3 class="experiencia__titulo">Podcast FM</h3>
+                    <p class="experiencia__descripcion">Crea tu propio contenido</p>
 
                     <div class="experiencia__btns">
-                        <a class="experiencia__btn" href="#">Repositorio</a>
-                        <a class="experiencia__btn" href="#">Ver demo</a>
+                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
+                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
                     </div>
 
                 </div>
             </div>
+            
             <div class="experiencia__elemento">
                 <div class="experiencia__imagenContainer">
                     <picture>
-                        <source srcset="build/assets/header.avif" type="image/avif">
-                        <source srcset="build/assets/header.webp" type="image/webp">
-                        <source srcset="build/assets/header.jpg" type="image/jpg">
-                        <img class="experiencia__imagen" loading="lazy" src="build/assets/header.jpg" width="500" height="300" alt="">
+                        <source srcset="build/assets/air.avif" type="image/avif">
+                        <source srcset="build/assets/air.webp" type="image/webp">
+                        <source srcset="build/assets/air.png" type="image/png">
+                        <img class="experiencia__imagen" loading="lazy" src="build/assets/air.png" width="500" height="300" alt="">
                     </picture>
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">Tech PRO</h3>
-                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
+                    <h3 class="experiencia__titulo">Airbnb</h3>
+                    <p class="experiencia__descripcion">A donde quieres viajar?</p>
 
                     <div class="experiencia__btns">
-                        <a class="experiencia__btn" href="#">Repositorio</a>
-                        <a class="experiencia__btn" href="#">Ver demo</a>
+                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
+                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
                     </div>
 
                 </div>
             </div>
-            <div class="experiencia__elemento">
-                <div class="experiencia__imagenContainer">
-                    <picture>
-                        <source srcset="build/assets/appComida.avif" type="image/avif">
-                        <source srcset="build/assets/appComida.webp" type="image/webp">
-                        <source srcset="build/assets/appComida.png" type="image/jpg">
-                        <img class="experiencia__imagen" loading="lazy" src="build/assets/appComida.png" width="500" height="300" alt="">
-                    </picture>
-                </div>
-
-                <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">App Comida</h3>
-                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
-
-                    <div class="experiencia__btns">
-                        <a class="experiencia__btn" href="#">Repositorio</a>
-                        <a class="experiencia__btn" href="#">Ver demo</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="experiencia__elemento">
-                <div class="experiencia__imagenContainer">
-                    <picture>
-                        <source srcset="build/assets/airbnb.avif" type="image/avif">
-                        <source srcset="build/assets/airbnb.webp" type="image/webp">
-                        <source srcset="build/assets/airbnb.png" type="image/jpg">
-                        <img class="experiencia__imagen" loading="lazy" src="build/assets/airbnb.png" width="500" height="300" alt="">
-                    </picture>
-                </div>
-
-                <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">Encriptador de texto</h3>
-                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
-
-                    <div class="experiencia__btns">
-                        <a class="experiencia__btn" href="#">Repositorio</a>
-                        <a class="experiencia__btn" href="#">Ver demo</a>
-                    </div>
-
-                </div>
-            </div>
-
+            
         </div>
 
     </section>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
