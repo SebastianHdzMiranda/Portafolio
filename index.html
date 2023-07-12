@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     
     <link rel="stylesheet" href="build/css/style.css">
 </head>
@@ -63,14 +66,9 @@
                 </a>
             </nav>
         </div>
-        <div class="perfil__fotoContainer">
-            <picture>
-                <source srcset="build/assets/foto.avif" type="image/avif">
-                <source srcset="build/assets/foto.webp" type="image/webp">
-                <source srcset="build/assets/foto.png" type="image/png">
-                <img class="perfil__foto" loading="lazy" src="build/assets/foto.png" width="500" height="300" alt="foto">
-            </picture>
-        </div>
+        <!-- <div class="perfil__fotoContainer">
+            <img class="perfil__foto" loading="lazy" src="build/assets/foto.jpeg" width="500" height="300" alt="foto">
+        </div> -->
     </section>
 
     <section class="sobreMi" id="sobreMi">
@@ -205,12 +203,38 @@
                     </label>
 
                     <div class="sobreMi__info">
-                        <h3 class="sobreMi__title">Software Developer Remote</h3>
-                        <p class="sobreMi__sitio">Selfbook / US - New York</p>
-                        <ul class="sobreMi__list">
-                            <li class="sobreMi__item">Developing screens and UI components for the web application using React and Tailwind.</li>
-                            <li class="sobreMi__item">Fixing UI issues and integrating backend APIs with Redux Saga.</li>
-                        </ul>
+                        <h3 class="sobreMi__title">Formación académica</h3>
+                        <!-- <p class="sobreMi__sitio">Selfbook / US - New York</p> -->
+                        <div class="formacion">
+                            <div class="formacion__contenido">
+                                <div class="formacion__elemento">
+                                    <div class="formacion__imagenContainer">
+                                        <picture>
+                                            <source srcset="build/assets/ipn.avif" type="image/avif">
+                                            <source srcset="build/assets/ipn.webp" type="image/webp">
+                                            <source srcset="build/assets/ipn.jpg" type="image/png">
+                                            <img class="formacion__imagen" loading="lazy" src="build/assets/ipn.png" width="500" height="300" alt="ipn">
+                                        </picture>
+                                    </div>
+                    
+                                    <div class="formacion__info">
+                                        <h3 class="formacion__titulo">Universidad ipn</h3>
+                                        <p class="formacion__texto">2021 - En curso</p>
+                                    </div>
+                                </div>
+                                <div class="formacion__elemento">
+                                    <div class="formacion__imagenContainer">
+                                        <img class="formacion__imagen" src="build/assets/logo.avif" alt="alura">
+                                    </div>
+                    
+                                    <div class="formacion__info">
+                                        <h3 class="formacion__titulo">Formacion Oracle ONE</h3>
+                                        <p class="formacion__texto">2023 - En curso</p>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,40 +242,8 @@
         </div>
     </section>
 
-    <section class="formacion seccion">
-        <h2 class="formacion__heading">Formación académica</h2>
-        <div class="formacion__contenido contenedor">
-            <div class="formacion__elemento">
-                <div class="formacion__imagenContainer">
-                    <picture>
-                        <source srcset="build/assets/ipn.avif" type="image/avif">
-                        <source srcset="build/assets/ipn.webp" type="image/webp">
-                        <source srcset="build/assets/ipn.jpg" type="image/png">
-                        <img class="formacion__imagen" loading="lazy" src="build/assets/ipn.png" width="500" height="300" alt="ipn">
-                    </picture>
-                </div>
-
-                <div class="formacion__info">
-                    <h3 class="formacion__titulo">Universidad ipn</h3>
-                    <p class="formacion__texto">2021 - En curso</p>
-                </div>
-            </div>
-            <div class="formacion__elemento">
-                <div class="formacion__imagenContainer">
-                    <img class="formacion__imagen" src="build/assets/logo.svg" alt="alura">
-                </div>
-
-                <div class="formacion__info">
-                    <h3 class="formacion__titulo">Formacion Oracle ONE</h3>
-                    <p class="formacion__texto">2021 - En curso</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="experiencia contenedor seccion">
-        <h2 class="experiencia__heading">Portafolio</h2>
+    <main class="experiencia contenedor seccion">
+        <h2 class="experiencia__heading">Proyectos</h2>
 
         <div class="experiencia___grid">
 
@@ -266,13 +258,18 @@
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">Encriptador de texto</h3>
-                    <p class="experiencia__descripcion">Challenge Oracle ONE codificador</p>
-
-                    <div class="experiencia__btns">
-                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
-                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
+                    <div class="experiencia__header">
+                        <h3 class="experiencia__titulo">Encriptador de texto</h3>
+                        <nav class="experiencia__nav">
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-github-fill"></i>
+                            </a>
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-link"></i>
+                            </a>
+                        </nav>
                     </div>
+                    <p class="experiencia__descripcion">Sitio Web de encriptador de texto para el Challenge de Oracle ONE</p>
 
                 </div>
             </div>
@@ -288,14 +285,18 @@
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">La Cafeteria</h3>
-                    <p class="experiencia__descripcion">Sitio Web, Venta de Cafe</p>
-
-                    <div class="experiencia__btns">
-                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
-                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
+                    <div class="experiencia__header">
+                        <h3 class="experiencia__titulo">La cafeteria</h3>
+                        <nav class="experiencia__nav">
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-github-fill"></i>
+                            </a>
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-link"></i>
+                            </a>
+                        </nav>
                     </div>
-
+                    <p class="experiencia__descripcion">Sitio de una cafeteria aplicando los conocimientos adquiridos en Sass y Js</p>
                 </div>
             </div>
             
@@ -310,13 +311,18 @@
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">Podcast FM</h3>
-                    <p class="experiencia__descripcion">Crea tu propio contenido</p>
-
-                    <div class="experiencia__btns">
-                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
-                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
+                    <div class="experiencia__header">
+                        <h3 class="experiencia__titulo">Podcast FM</h3>
+                        <nav class="experiencia__nav">
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-github-fill"></i>
+                            </a>
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-link"></i>
+                            </a>
+                        </nav>
                     </div>
+                    <p class="experiencia__descripcion">Sitio Crea tu propio contenido</p>
 
                 </div>
             </div>
@@ -332,20 +338,28 @@
                 </div>
 
                 <div class="experiencia__info">
-                    <h3 class="experiencia__titulo">Airbnb</h3>
-                    <p class="experiencia__descripcion">A donde quieres viajar?</p>
-
-                    <div class="experiencia__btns">
-                        <a class="experiencia__btn" target="_blank" href="https://github.com/SebastianHdzMiranda/Encriptador-ChallengeONE">Repositorio</a>
-                        <a class="experiencia__btn" target="_blank" href="https://sebastianhdzmiranda.github.io/Encriptador-ChallengeONE/">Ver demo</a>
+                    <div class="experiencia__header">
+                        <h3 class="experiencia__titulo">Airbnb</h3>
+                        <nav class="experiencia__nav">
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-github-fill"></i>
+                            </a>
+                            <a href="#" class="experiencia__vinculo">
+                                <i class="experiencia__icon ri-link"></i>
+                            </a>
+                        </nav>
                     </div>
-
+                    <p class="experiencia__descripcion">Pagina simuladora de AirBnB. A donde quieres Viajar?</p>
                 </div>
             </div>
             
         </div>
 
-    </section>
+    </main>
+
+    <!-- <footer class="contenedor footer">
+        <p class="footer__texto">&copy; Todos los derechos reservados. 2023</p>
+    </footer> -->
 
     <script src="js/app.js"></script>
 </body>

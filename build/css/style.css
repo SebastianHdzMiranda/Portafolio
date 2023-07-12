@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  background-color: #111111;
+  background-color: #000000;
 }
 
 a {
@@ -66,7 +66,7 @@ p {
   font-size: 1.6rem;
   line-height: 2;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -88,7 +88,7 @@ p {
 }
 @media (min-width: 768px) {
   .seccion {
-    padding: 15rem 0;
+    padding: 18rem 0;
   }
 }
 
@@ -186,7 +186,7 @@ p {
   }
 }
 .menu .menu__nav--visible {
-  height: 37rem;
+  height: 39rem;
   padding-top: 4rem;
   box-shadow: 0px -8px 21px 0px rgb(255, 255, 255);
 }
@@ -227,9 +227,11 @@ p {
   }
 }
 .perfil__intro {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   text-align: center;
   letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .perfil__intro {
@@ -241,6 +243,11 @@ p {
   .perfil__intro {
     font-size: 4rem;
   }
+}
+.perfil__descripcion {
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-weight: 300;
 }
 .perfil__nav {
   display: flex;
@@ -257,11 +264,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .perfil__link {
-    gap: 0.5rem;
-  }
+  gap: 0.5rem;
 }
 @media (min-width: 1024px) {
   .perfil__link {
@@ -290,7 +293,7 @@ p {
   flex: 1;
   order: -1;
   margin: 0 auto 3rem auto;
-  max-width: 20rem;
+  max-width: 22rem;
 }
 @media (min-width: 768px) {
   .perfil__fotoContainer {
@@ -303,6 +306,8 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  min-width: 22rem;
+  height: 22rem;
 }
 
 /* sobre mi
@@ -319,7 +324,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .sobreMi .sobreMi__secciones {
   position: relative;
@@ -504,6 +509,10 @@ p {
 
 /* formacion
 ----------------------------------------------------------*/
+.formacion {
+  width: 80%;
+  margin: 4rem auto 0 auto;
+}
 .formacion__heading {
   text-align: center;
 }
@@ -530,15 +539,8 @@ p {
   }
 }
 .formacion__imagenContainer {
-  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
-  padding: 3rem;
-}
-@media (min-width: 768px) {
-  .formacion__imagenContainer {
-    padding: 5rem;
-  }
 }
 .formacion__imagen {
   height: 10rem;
@@ -552,14 +554,24 @@ p {
     width: 12rem;
   }
 }
+.formacion__info {
+  text-align: center;
+}
 .formacion__titulo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1.5rem 0 0 0;
 }
 .formacion__texto {
   margin: 0;
 }
 
+.experiencia__heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
 .experiencia___grid {
   display: grid;
   gap: 2rem;
@@ -568,32 +580,44 @@ p {
   .experiencia___grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 4rem;
-       -moz-column-gap: 4rem;
-            column-gap: 4rem;
-    row-gap: 4rem;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 2rem;
   }
 }
 .experiencia__elemento {
-  background-color: #333333;
-  border-radius: 10px;
   overflow: hidden;
 }
 .experiencia__imagen {
-  border: 1px solid #262626;
+  border-radius: 3px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 20rem;
+  border-inline: 2px solid rgba(255, 255, 255, 0.7215686275);
 }
 .experiencia__info {
-  padding: 2rem;
+  padding: 2rem 0;
+}
+.experiencia__header {
+  display: flex;
+  justify-content: space-between;
 }
 .experiencia__titulo {
   color: #FFFFFF;
-  text-align: center;
-  margin: 2rem 0;
+  margin: 0 0 1.4rem 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.experiencia__icon {
+  font-size: 2rem;
 }
 .experiencia__descripcion {
   color: #FFFFFF;
-}
-.experiencia__btn {
-  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@
 /* formacion
 ----------------------------------------------------------*/
 .formacion{
+    width: 80%;
+    margin: 4rem auto 0 auto;
     &__heading{
         text-align: center;
     }
@@ -27,14 +29,8 @@
         }
     }
     &__imagenContainer{
-        background-color: v.$blanco;
         display: flex;
         justify-content: center;
-        padding: 3rem;
-
-        @include m.tablet{
-            padding: 5rem;
-        }
     }
     &__imagen{
         height: 10rem;
@@ -45,8 +41,11 @@
             width: 12rem;
         }
     }
+    &__info{
+        text-align: center;
+    }
     &__titulo{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 1.5rem 0 0 0;
     }
     &__texto{
