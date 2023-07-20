@@ -80,7 +80,7 @@
             
                     <input class="sobreMi__input" type="radio" name="secciones" id="seccion1" checked>
                     <label class="sobreMi__label" for="seccion1">
-                        <p class="sobreMi__nombre">Selfbook</p>
+                        <p class="sobreMi__nombre">Biografia</p>
                     </label>
                 
                     <div class="sobreMi__info">
@@ -358,33 +358,52 @@
 
     <section class="contacto contenedor seccion" id="contacto">
         <h2 class="contacto__heading">Contactame</h2>
-        <div class="contacto__talk">
-            <h3>Habla Conmigo</h3>
-            <div class="contacto__medios">
-                <div class="contacto__medio">
-                    <img class="contacto__icon" src="build/assets/email.svg" alt="Email">
-                    <p class="contacto__nombre">Email</p>
-                    <p class="contacto__referencia">sebashm68@gmail.com</p>
-                    <a href="mailto:sebashm68@gmail.com">Write me -></a>
-                </div>
-                <div class="contacto__medio">
-                    <img class="contacto__icon" src="build/assets/whats.svg" alt="Email">
-                    <p class="contacto__nombre">Whatsapp</p>
-                    <p class="contacto__referencia">5584956420</p>
-                    <a href="#">Write me -></a>
-                </div>
-                <div class="contacto__medio">
-                    <img class="contacto__icon" src="build/assets/messenger.svg" alt="Email">
-                    <p class="contacto__nombre">Messenger</p>
-                    <p class="contacto__referencia">Sebastian Hernandez</p>
-                    <a href="#">Write me -></a>
+
+        <div class="contacto__contenido">
+            <div class="contacto__talk">
+                <h3>Habla Conmigo</h3>
+                <div class="contacto__medios">
+                    <div class="contacto__medio">
+                        <img class="contacto__icon" src="build/assets/email.svg" alt="Email">
+                        <p class="contacto__nombre">Email</p>
+                        <p class="contacto__referencia">sebashm68@gmail.com</p>
+                        <a href="mailto:sebashm68@gmail.com" class="contacto__enlace">Write me -></a>
+                    </div>
+                    <div class="contacto__medio">
+                        <img class="contacto__icon" src="build/assets/whats.svg" alt="Email">
+                        <p class="contacto__nombre">Whatsapp</p>
+                        <p class="contacto__referencia">5584956420</p>
+                        <a href="#" class="contacto__enlace">Write me -></a>
+                    </div>
+                    <div class="contacto__medio">
+                        <img class="contacto__icon" src="build/assets/messenger.svg" alt="Email">
+                        <p class="contacto__nombre">Messenger</p>
+                        <p class="contacto__referencia">SebastianHernandez</p>
+                        <a href="#" class="contacto__enlace">Write me -></a>
+                    </div>
                 </div>
             </div>
+    
+            <form class="formulario">
+                <h3 class="formulario__heading">Escribeme Sobre algun proyecto</h3>
+                <div class="formulario__contenido">
+                    <div class="formulario__seccion">
+                        <label class="formulario__label" for="nombre">Nombre</label>
+                        <input id="nombre" class="formulario__input" type="text" placeholder="Digite Su Nombre">
+                    </div>
+                    <div class="formulario__seccion">
+                        <label class="formulario__label" for="email">Email</label>
+                        <input id="email" class="formulario__input" type="email" placeholder="Digite Su Email">
+                    </div>
+                    <div class="formulario__seccion">
+                        <label class="formulario__label" for="proyecto">Proyecto</label>
+                        <textarea name="proyecto" class="formulario__textarea" id="proyecto" cols="30" rows="10"></textarea>
+                    </div>
+                    <input class="formulario__submit" type="submit" value="Enviar">
+                </div>
+    
+            </form>
         </div>
-
-        <form class="formulario">
-
-        </form>
     </section>
 
     <!-- <footer class="contenedor footer">

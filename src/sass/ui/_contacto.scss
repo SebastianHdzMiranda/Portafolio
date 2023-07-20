@@ -1,0 +1,79 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+
+.contacto{
+    .contacto__contenido{
+        @include m.grid(1, 0, 5rem);
+        @include m.tablet{
+            @include m.grid(2, 5rem, 0);
+        }
+    }
+    .contacto__talk{
+
+    }
+    .contacto__medios{
+        @include m.grid(1, 2rem, 2rem);
+    }
+    .contacto__medio{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: lighten(v.$negro, 3%);
+        border-radius: 10px;
+    }
+    .contacto__icon{
+        width: 4rem;
+        margin: 0 auto 1rem auto;
+    }
+    .contacto__nombre{
+        margin: 0;
+        font-weight: 900;
+    }
+    .contacto__referencia{
+        margin: 0 0 1.5rem 0;
+    }
+    .contacto__enlace{
+
+    }
+}
+.formulario{
+    .formulario__heading{
+
+    }
+    .formulario__contenido{
+
+    }
+    .formulario__seccion{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .formulario__label{
+
+    }
+    .formulario__input{
+        padding: 2rem 0 2rem 1rem;
+    }
+    .formulario__input, .formulario__textarea{
+        background-color: transparent;
+        color: v.$blanco;
+    }
+    .formulario__textarea{
+
+    }
+    .formulario__submit{
+        @include m.btn(v.$negro, v.$blanco, v.$negro);
+        font-family: v.$font-primary;
+        margin-top: 2rem;
+        font-weight: 700;
+        width: 100%;
+        cursor: pointer;
+
+        @include m.tablet{
+            width: unset;
+        }
+    }
+}
