@@ -2,14 +2,6 @@
 @use 'bases/mixins' as m;
 
 .experiencia{
-
-    &__heading{
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 2.5rem;
-        margin-bottom: 4rem;
-    }
     &___grid{
         display: grid;
         gap: 2rem;

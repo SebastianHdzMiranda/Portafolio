@@ -13,7 +13,7 @@
 .seccion{
     padding: 5rem 0;
     @include m.tablet{
-        padding: v.$separacion 0;
+        padding: v.$separacion 0 0 0;
     }
 }
 .degradado-verde{
