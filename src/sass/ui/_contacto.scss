@@ -3,19 +3,20 @@
 
 
 .contacto{
-    .contacto__contenido{
+    padding: 18rem 0;
+    &__contenido{
         @include m.grid(1, 0, 5rem);
         @include m.tablet{
             @include m.grid(2, 5rem, 0);
         }
     }
-    .contacto__talk{
+    &__talk{
 
     }
-    .contacto__medios{
+    &__medios{
         @include m.grid(1, 2rem, 2rem);
     }
-    .contacto__medio{
+    &__medio{
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -24,47 +25,83 @@
         background-color: lighten(v.$negro, 3%);
         border-radius: 10px;
     }
-    .contacto__icon{
+    &__icon{
         width: 4rem;
         margin: 0 auto 1rem auto;
     }
-    .contacto__nombre{
+    &__nombre{
         margin: 0;
         font-weight: 900;
+        line-height: 1.2;
     }
-    .contacto__referencia{
+    &__referencia{
         margin: 0 0 1.5rem 0;
     }
-    .contacto__enlace{
-
+    &__enlace{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4rem;
+        &:hover{
+            .contacto__arrow{
+                transform: rotate(180deg) translateX(-3px);
+            }
+        }
+    }
+    &__arrow{
+        transition: all .3s;
+        font-size: 1.4rem;
     }
 }
 .formulario{
-    .formulario__heading{
+    &__heading{
 
     }
-    .formulario__contenido{
+    &__contenido{
 
     }
-    .formulario__seccion{
+    &__seccion{
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
+        height: 7rem;
+        position: relative;
+        
+        &:last-of-type{
+            height: 25rem;
+            margin-bottom: 0;
+        }
+        
     }
-    .formulario__label{
-
+    &__label{
+        position: absolute;
+        top: -17px;
+        left: 20px;
+        background-color: v.$negro;
+        z-index: 1;
+        padding: 0 .5rem;
     }
-    .formulario__input{
-        padding: 2rem 0 2rem 1rem;
+    &__input{
+        position: absolute;
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px black inset;
+            -webkit-text-fill-color: white;
+        }
     }
-    .formulario__input, .formulario__textarea{
+    &__input, &__textarea{
+        padding-inline: 2.5rem;
+        width: 100%;
+        height: 100%;
         background-color: transparent;
         color: v.$blanco;
+        border-radius: 15px;
+        outline: none;
+        border: 1px solid v.$blanco;
     }
-    .formulario__textarea{
-
+    &__textarea{
+        padding-top: 2rem
     }
-    .formulario__submit{
+    &__submit{
         @include m.btn(v.$negro, v.$blanco, v.$negro);
         font-family: v.$font-primary;
         margin-top: 2rem;
