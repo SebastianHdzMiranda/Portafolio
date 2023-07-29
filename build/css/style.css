@@ -614,7 +614,12 @@ p, label {
 }
 
 .contacto {
-  padding: 18rem 0;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contacto {
+    padding: 18rem 0;
+  }
 }
 .contacto__contenido {
   display: grid;
@@ -622,17 +627,42 @@ p, label {
   -webkit-column-gap: 0;
      -moz-column-gap: 0;
           column-gap: 0;
-  row-gap: 5rem;
+  row-gap: 7rem;
 }
 @media (min-width: 768px) {
   .contacto__contenido {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 5rem;
-       -moz-column-gap: 5rem;
-            column-gap: 5rem;
+    -webkit-column-gap: 8rem;
+       -moz-column-gap: 8rem;
+            column-gap: 8rem;
     row-gap: 0;
   }
+}
+@media (min-width: 1024px) {
+  .contacto__contenido {
+    grid-template-columns: 1.5fr 2fr;
+  }
+}
+.contacto__h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+@media (min-width: 768px) {
+  .contacto__h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__h3 {
+    font-size: 1.7rem;
+  }
+}
+.contacto__h3--formulario {
+  margin-bottom: 4rem;
 }
 .contacto__medios {
   display: grid;
@@ -648,7 +678,7 @@ p, label {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #080808;
+  background-color: rgb(13, 13, 13);
   border-radius: 10px;
 }
 .contacto__icon {
@@ -670,19 +700,22 @@ p, label {
   gap: 0.4rem;
 }
 .contacto__enlace:hover .contacto__arrow {
-  -webkit-transform: rotate(180deg) translateX(-3px);
-          transform: rotate(180deg) translateX(-3px);
+  -webkit-transform: rotate(180deg) translate(-4px, 1px);
+          transform: rotate(180deg) translate(-4px, 1px);
 }
 .contacto__arrow {
   transition: all 0.3s;
   font-size: 1.4rem;
+  -webkit-transform: rotate(180deg) translateY(1px);
+          transform: rotate(180deg) translateY(1px);
+  height: 100%;
 }
 
 .formulario__seccion {
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
-  height: 7rem;
+  height: 6rem;
   position: relative;
 }
 .formulario__seccion:last-of-type {
@@ -710,7 +743,7 @@ p, label {
   height: 100%;
   background-color: transparent;
   color: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 10px;
   outline: none;
   border: 1px solid #FFFFFF;
 }
@@ -723,14 +756,10 @@ p, label {
   border: 1px solid #000000;
   padding: 1rem 3rem;
   font-family: "Inter", sans-serif;
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-weight: 700;
   width: 100%;
   cursor: pointer;
-}
-@media (min-width: 768px) {
-  .formulario__submit {
-    width: unset;
-  }
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

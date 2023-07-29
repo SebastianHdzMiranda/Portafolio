@@ -3,15 +3,37 @@
 
 
 .contacto{
-    padding: 18rem 0;
+    padding-bottom: 5rem;
+    @include m.tablet{
+        padding: 18rem 0;
+    }
     &__contenido{
-        @include m.grid(1, 0, 5rem);
+        @include m.grid(1, 0, 7rem);
         @include m.tablet{
-            @include m.grid(2, 5rem, 0);
+            @include m.grid(2, 8rem, 0);
+        }
+        @include m.desktop{
+            grid-template-columns: 1.5fr 2fr;
         }
     }
     &__talk{
 
+    }
+    &__h3{
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+        @include m.desktop{
+            font-size: 1.7rem;
+        }
+        &--formulario{
+            margin-bottom: 4rem;
+        }
     }
     &__medios{
         @include m.grid(1, 2rem, 2rem);
@@ -22,7 +44,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        background-color: lighten(v.$negro, 3%);
+        background-color: rgb(13, 13, 13);;
         border-radius: 10px;
     }
     &__icon{
@@ -44,13 +66,15 @@
         gap: .4rem;
         &:hover{
             .contacto__arrow{
-                transform: rotate(180deg) translateX(-3px);
+                transform: rotate(180deg) translate(-4px, 1px);
             }
         }
     }
     &__arrow{
         transition: all .3s;
         font-size: 1.4rem;
+        transform: rotate(180deg) translateY(1px);
+        height: 100%;
     }
 }
 .formulario{
@@ -64,7 +88,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 5rem;
-        height: 7rem;
+        height: 6rem;
         position: relative;
         
         &:last-of-type{
@@ -94,7 +118,7 @@
         height: 100%;
         background-color: transparent;
         color: v.$blanco;
-        border-radius: 15px;
+        border-radius: 10px;
         outline: none;
         border: 1px solid v.$blanco;
     }
@@ -104,13 +128,13 @@
     &__submit{
         @include m.btn(v.$negro, v.$blanco, v.$negro);
         font-family: v.$font-primary;
-        margin-top: 2rem;
+        margin-top: 4rem;
         font-weight: 700;
         width: 100%;
-        cursor: pointer;
-
+        cursor: pointer;    
+        border-radius: 5px;
         @include m.tablet{
-            width: unset;
+            // margin-top: 2rem;
         }
     }
 }
