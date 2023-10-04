@@ -6,6 +6,10 @@
     &__contenido{
         padding: 5rem 0;
         border-bottom: 1px solid #ffffff;
+        margin-bottom: 5rem;
+        @include m.tablet{
+            margin-bottom: 11rem;
+        }
     }
     &__secciones{
         position: relative;

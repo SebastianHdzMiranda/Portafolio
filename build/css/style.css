@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-size: 1.6rem;
   background-color: #000000;
 }
@@ -43,7 +43,7 @@ li {
 /* Tipografia
 ----------------------------------------------------------*/
 h1, h2, h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "futura-pt", sans-serif;
   margin: 0 0 2rem 0;
   line-height: 1.2;
   color: #FFFFFF;
@@ -67,9 +67,9 @@ h3 {
 
 p, label {
   color: rgba(255, 255, 255, 0.7019607843);
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 2;
-  font-family: "Inter", sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -113,7 +113,12 @@ p, label {
   align-items: center;
   width: min(128rem, 90%);
   margin: 0 auto;
-  padding-top: 2rem;
+  padding: 2rem 0 8rem 0;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 15rem;
+  }
 }
 .header__logo {
   display: flex;
@@ -128,6 +133,11 @@ p, label {
 }
 .header__imgLogo {
   width: 4rem;
+}
+@media (min-width: 768px) {
+  .header__imgLogo {
+    width: 6rem;
+  }
 }
 .header__nav {
   display: flex;
@@ -161,7 +171,7 @@ p, label {
   width: 100%;
   height: 0;
   overflow: hidden;
-  transition: all 0.15s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
   justify-content: center;
   text-align: center;
 }
@@ -195,7 +205,7 @@ p, label {
   }
 }
 .menu .menu__nav--visible {
-  height: 43rem;
+  height: 60%;
   padding-top: 4rem;
   box-shadow: 0px -6px 21px 0px rgb(255, 255, 255);
 }
@@ -212,9 +222,11 @@ p, label {
 .perfil {
   display: flex;
   flex-direction: column;
+  padding: 0 0 5rem 0;
 }
 @media (min-width: 768px) {
   .perfil {
+    padding: 0 0 11rem 0;
     flex-direction: row;
     gap: 2rem;
     align-items: center;
@@ -236,7 +248,7 @@ p, label {
   }
 }
 .perfil__intro {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -324,6 +336,12 @@ p, label {
 .sobreMi__contenido {
   padding: 5rem 0;
   border-bottom: 1px solid #ffffff;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .sobreMi__contenido {
+    margin-bottom: 11rem;
+  }
 }
 .sobreMi__secciones {
   position: relative;
@@ -565,6 +583,14 @@ p, label {
   margin: 0;
 }
 
+.experiencia {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .experiencia {
+    padding-bottom: 11rem;
+  }
+}
 .experiencia___grid {
   display: grid;
   gap: 2rem;
@@ -610,16 +636,11 @@ p, label {
 .experiencia__descripcion {
   margin: 0;
   line-height: 1.6;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .contacto {
-  padding-bottom: 5rem;
-}
-@media (min-width: 768px) {
-  .contacto {
-    padding: 18rem 0;
-  }
+  padding: 5rem 0;
 }
 .contacto__contenido {
   display: grid;
@@ -724,7 +745,7 @@ p, label {
 }
 .formulario__label {
   position: absolute;
-  top: -17px;
+  top: -21px;
   left: 20px;
   background-color: #000000;
   z-index: 1;
@@ -755,11 +776,17 @@ p, label {
   background-color: #FFFFFF;
   border: 1px solid #000000;
   padding: 1rem 3rem;
-  font-family: "Inter", sans-serif;
-  margin-top: 4rem;
+  font-family: "futura-pt", sans-serif;
+  margin-top: 7.5rem;
   font-weight: 700;
   width: 100%;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .formulario__submit {
+    margin-top: 7.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

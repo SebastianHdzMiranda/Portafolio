@@ -8,7 +8,10 @@
     // position: relative;
     width: min(128rem, 90%);
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 2rem 0 8rem 0;
+    @include m.tablet{
+        padding-bottom: 15rem;
+    }
     &__logo{
         display: flex;
         gap: 1rem;
@@ -22,6 +25,9 @@
     }
     &__imgLogo{
         width: 4rem;
+        @include m.tablet{
+            width: 6rem;
+        }
     }
     &__nav{
         display: flex;
@@ -53,7 +59,7 @@
         width: 100%;
         height: 0;
         overflow: hidden;
-        transition: all .15s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all .15s cubic-bezier(0.39, 0.575, 0.565, 1);
         justify-content: center;
         text-align: center;
         @include m.tablet{
@@ -83,7 +89,7 @@
     }
 
     .menu__nav--visible{
-        height: 43rem;
+        height: 60%;
         padding-top: 4rem;
         box-shadow: 0px -6px 21px 0px rgba(255,255,255,1);
         @include m.tablet{

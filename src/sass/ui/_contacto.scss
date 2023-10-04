@@ -3,9 +3,9 @@
 
 
 .contacto{
-    padding-bottom: 5rem;
+    padding: 5rem 0;
     @include m.tablet{
-        padding: 18rem 0;
+        // padding: 18rem 0;
     }
     &__contenido{
         @include m.grid(1, 0, 7rem);
@@ -78,12 +78,7 @@
     }
 }
 .formulario{
-    &__heading{
 
-    }
-    &__contenido{
-
-    }
     &__seccion{
         display: flex;
         flex-direction: column;
@@ -99,7 +94,7 @@
     }
     &__label{
         position: absolute;
-        top: -17px;
+        top: -21px;
         left: 20px;
         background-color: v.$negro;
         z-index: 1;
@@ -128,13 +123,15 @@
     &__submit{
         @include m.btn(v.$negro, v.$blanco, v.$negro);
         font-family: v.$font-primary;
-        margin-top: 4rem;
+        margin-top: 7.5rem;
         font-weight: 700;
         width: 100%;
         cursor: pointer;    
         border-radius: 5px;
+        font-size: 2rem;
         @include m.tablet{
-            // margin-top: 2rem;
+        margin-top: 7.5rem;
+
         }
     }
 }
